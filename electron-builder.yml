@@ -1,0 +1,81 @@
+appId: com.vibekanban.desktop
+productName: Vibe Kanban
+copyright: Copyright © 2026 Vibe Kanban Team
+
+directories:
+  output: dist
+  buildResources: build
+
+files:
+  - out/**/*
+  - package.json
+  - "!node_modules/**/*.md"
+  - "!node_modules/**/test/**"
+  - "!node_modules/**/*.ts"
+
+extraMetadata:
+  main: ./out/main/main.js
+
+mac:
+  category: public.app-category.productivity
+  target:
+    - target: dmg
+      arch:
+        - x64
+        - arm64
+    - target: zip
+      arch:
+        - x64
+        - arm64
+  icon: build/icon.icns
+  hardenedRuntime: true
+  gatekeeperAssess: false
+
+dmg:
+  contents:
+    - x: 130
+      y: 220
+    - x: 410
+      y: 220
+      type: link
+      path: /Applications
+  window:
+    width: 540
+    height: 380
+
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+        - arm64
+    - target: portable
+      arch:
+        - x64
+  icon: build/icon.ico
+
+nsis:
+  oneClick: false
+  perMachine: false
+  allowElevation: true
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: Vibe Kanban
+
+linux:
+  target:
+    - AppImage
+    - deb
+    - rpm
+  category: Utility
+  icon: build/icon.png
+  maintainer: Vibe Kanban Team
+  synopsis: Kanban board for developers
+  description: A desktop kanban board application powered by vibe-kanban
+
+publish:
+  provider: github
+  owner: bloopai
+  repo: vibe-kanban-desktop
+  releaseType: release

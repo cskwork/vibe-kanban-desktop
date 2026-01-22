@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <!-- 배경 - 둥근 모서리 -->
+  <rect x="0" y="0" width="1024" height="1024" rx="180" fill="#6366f1"/>
+
+  <!-- 칸반 컬럼 3개 -->
+  <!-- 컬럼 1 (To Do) -->
+  <rect x="120" y="180" width="240" height="664" rx="24" fill="#ffffff" opacity="0.2"/>
+  <rect x="144" y="240" width="192" height="120" rx="16" fill="#ffffff"/>
+  <rect x="144" y="384" width="192" height="80" rx="16" fill="#ffffff"/>
+  <rect x="144" y="488" width="192" height="100" rx="16" fill="#ffffff"/>
+
+  <!-- 컬럼 2 (Doing) -->
+  <rect x="392" y="180" width="240" height="664" rx="24" fill="#ffffff" opacity="0.2"/>
+  <rect x="416" y="240" width="192" height="100" rx="16" fill="#ffffff"/>
+  <rect x="416" y="364" width="192" height="140" rx="16" fill="#ffffff"/>
+
+  <!-- 컬럼 3 (Done) -->
+  <rect x="664" y="180" width="240" height="664" rx="24" fill="#ffffff" opacity="0.2"/>
+  <rect x="688" y="240" width="192" height="80" rx="16" fill="#ffffff"/>
+  <rect x="688" y="344" width="192" height="100" rx="16" fill="#ffffff"/>
+  <rect x="688" y="468" width="192" height="120" rx="16" fill="#ffffff"/>
+  <rect x="688" y="612" width="192" height="80" rx="16" fill="#ffffff"/>
+</svg>
