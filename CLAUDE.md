@@ -1,7 +1,7 @@
 # vibe-kanban-desktop
 
 <!-- AUTO-MANAGED: project-description -->
-Electron + TypeScript desktop wrapper for vibe-kanban with dual updater system, automatic port detection, health checks, and splash screen. Provides secure main/preload/renderer architecture.
+Electron + TypeScript desktop wrapper for vibe-kanban with dual updater system, automatic port detection, health checks, and splash screen. Provides secure main/preload/renderer architecture. Features process management via npx, auto port detection via stdout regex, health checks with retry logic, app updates via GitHub Releases, and npm package updates.
 <!-- END AUTO-MANAGED -->
 
 ## Build Commands
@@ -99,6 +99,8 @@ Initial project creation with complete Electron + TypeScript setup:
 - App icon integration (macOS/Windows/Linux) with BrowserWindow configuration
 - macOS Dock icon handling via `app.dock.setIcon()` in bootstrap() - resolves dev/packaged mode icon display
 - Changelog documented in docs/changelog/changelog-2026-01-22.md
+
+**commit 823863c**: Comprehensive README.md added documenting features, system requirements (Node.js 18+, npm 9+), setup instructions, development workflow, packaging for all platforms (macOS/Windows/Linux), complete project structure, and security architecture.
 <!-- END AUTO-MANAGED -->
 
 ## Testing & Validation
